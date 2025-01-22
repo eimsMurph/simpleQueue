@@ -17,3 +17,15 @@ void test_isFull_false_when_not_full(void){
     TEST_ASSERT_FALSE(isFull(&q));
 
 }
+
+//Test 3
+//Test for enqueue 
+void test_enqueue(void){
+    Queue q;
+    //if queue isn't full, add 1 to queue
+    if(!isFull(&q)){
+        enqueue(&q, 1);
+    }
+    //check 1 is at first place in queue 
+    TEST_ASSERT_EQUAL(1, q.data[0]);
+}
