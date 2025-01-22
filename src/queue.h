@@ -1,4 +1,6 @@
 
+#include "stdbool.h"
+#include "stdlib.h"
 typedef struct
 {
     int *data;
@@ -10,4 +12,6 @@ typedef struct
     /* data */
 }Queue;
 
+//Function headers
 Queue initQueue(int cap);
+bool isFull(Queue *q);

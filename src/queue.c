@@ -10,3 +10,9 @@
     q.back = -1;
     return q;
  }
+
+ //Function to check if queue is full
+
+ bool isFull(Queue *q){
+   return (q->size == q->capacity);
+ }
