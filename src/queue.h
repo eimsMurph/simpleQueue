@@ -10,4 +10,4 @@ typedef struct
     /* data */
 }Queue;
 
- Queue initQueue(int cap);
+Queue initQueue(int cap);

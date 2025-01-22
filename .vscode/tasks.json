@@ -5,11 +5,13 @@
             "label": "C/C++: cl.exe build active file",
             "command": "cl.exe",
             "args": [
-                "/Zi",
-                "/EHsc",
-                "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "/W4",                     // Enable level 4 warnings
+                "/WX",                     // Treat warnings as errors
+                "/Zi",                     // Generate debugging information
+                "/EHsc",                   // Enable C++ exceptions (safe)
+                "/nologo",                 // Suppress the logo message
+                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe", // Output file
+                "${file}"                  // Source file
             ],
             "options": {
                 "cwd": "${fileDirname}"
