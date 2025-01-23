@@ -29,3 +29,16 @@ void test_enqueue(void){
     //check 1 is at first place in queue 
     TEST_ASSERT_EQUAL(1, q.data[0]);
 }
+
+
+//Test 4
+//Test for isFull & enqueue
+//Test should return true when queue is at capacity
+//Test enqueue returns -1 when full 
+void test_isFull_true_when_full(void){
+    Queue q = initQueue(3);
+    enqueue(&q, 1);
+    enqueue(&q, 2);
+    enqueue(&q, 3);
+    TEST_ASSERT_EQUAL(-1, enqueue(&q, 4));
+}
