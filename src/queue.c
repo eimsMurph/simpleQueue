@@ -29,3 +29,8 @@
    return 0;
 
  }
+
+ //Function to check if queue is empty
+  bool isEmpty(Queue *q){
+   return (q->size == 0);
+ }

@@ -16,3 +16,4 @@ typedef struct
 Queue initQueue(int cap);
 bool isFull(Queue *q);
 int enqueue(Queue* q, int num);
+bool isEmpty(Queue *q);
