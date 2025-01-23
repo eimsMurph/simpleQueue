@@ -15,7 +15,6 @@ void test_queue_exists_isFull(void){
 void test_isFull_false_when_not_full(void){
     Queue q = initQueue(3);
     TEST_ASSERT_FALSE(isFull(&q));
-
 }
 
 //Test 3
@@ -41,4 +40,15 @@ void test_isFull_true_when_full(void){
     enqueue(&q, 2);
     enqueue(&q, 3);
     TEST_ASSERT_EQUAL(-1, enqueue(&q, 4));
+}
+
+//Test 5
+//Test for is empty
+//Test for isFull
+//Should return false for queue is not empty
+//Test should fail while isEmpty function not implemetned. 
+void test_isEmpty_false_when_not_empty(void){
+    Queue q = initQueue(3);
+    enqueue(&q, 1);
+    TEST_ASSERT_FALSE(isEmpty(&q));
 }
