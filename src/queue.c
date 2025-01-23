@@ -16,3 +16,16 @@
  bool isFull(Queue *q){
    return (q->size == q->capacity);
  }
+
+ //Funtion to add number to queue
+
+ int enqueue(Queue* q, int num){
+   if(isFull(q)== true){
+      return -1;
+   } 
+   q->data[q->back] = num;
+   q->back++;
+   q->size++;
+   return 0;
+
+ }

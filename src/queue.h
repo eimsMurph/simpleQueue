@@ -15,3 +15,4 @@ typedef struct
 //Function headers
 Queue initQueue(int cap);
 bool isFull(Queue *q);
+int enqueue(Queue* q, int num);
